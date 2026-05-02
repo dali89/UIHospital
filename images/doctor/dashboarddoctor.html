@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard1.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+        <li  class="active"><a href="dashboarddoctor.html">Dashboard</a></li>
+        <li><a href="patient1.html">My Patients</a></li>
+        <li><a href="appoint.html">Appointments</a></li>
+        <li><a href="prescription.html">Prescriptions</a></li>
+        <li><a href="labreport.html">Lab Reports</a></li>
+        <li><a href="ward.html">Wards</a></li>
+        <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Message</a></li>
+           <li><a href="setting.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+   
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <span class="username">Dr. Madhusha</span>
+        <h2>MediLab Doctor Panel</h2>
+        <span class="username">Cardiology</span>
+      </header>
+
+      <!-- Top Summary Cards -->
+      <section class="summary-cards">
+        <div class="card">
+          <i>👥</i>
+          <h3>Total Patients</h3>
+          <p>148</p>
+        </div>
+        <div class="card">
+          <i>📅</i>
+          <h3>Today's Appointments</h3>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <i>🧪</i>
+          <h3>Pending Reports</h3>
+          <p>08</p>
+        </div>
+        <div class="card">
+          <i>🏨</i>
+          <h3>Available Wards</h3>
+          <p>06</p>
+        </div>
+      </section>
+
+      <!-- Chart + Appointments -->
+      <section class="charts-appointments">
+        <div class="chart-container">
+          <h3>Weekly Patient Visits</h3>
+          <canvas id="patientChart"></canvas>
+        </div>
+
+        <div class="appointments">
+          <h3>Today's Appointments</h3>
+          <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Patient</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rahul Sharma</td>
+                <td>10:00 AM</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Anita Verma</td>
+                <td>11:30 AM</td>
+                <td><span class="accepted">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Rohan Singh</td>
+                <td>01:00 PM</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Priya Nair</td>
+                <td>03:15 PM</td>
+                <td><span class="accepted">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Patients -->
+      <section class="recent-doctors">
+        <h3>Recent Patients</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Problem</th>
+                <th>Age</th>
+                <th>Last Visit</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Sam</td>
+                <td>0786535231</td>
+                <td>Fever</td>
+                <td>26</td>
+                <td>2026-03-15</td>
+                <td><span class="online">Recovered</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>0747258979</td>
+                <td>Chest Pain</td>
+                <td>42</td>
+                <td>2026-03-16</td>
+                <td><span class="offline">Critical</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>David</td>
+                <td>0781478479</td>
+                <td>Cough</td>
+                <td>34</td>
+                <td>2026-03-18</td>
+                <td><span class="online">Stable</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Prescription Alerts -->
+      <section class="out-stock">
+        <h3>Prescription Alerts</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Patient Name</th>
+                <th>Medicine</th>
+                <th>Dosage</th>
+                <th>Next Review</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Riya Sharma</td>
+                <td>Paracetamol</td>
+                <td>2 times/day</td>
+                <td>2026-03-22</td>
+                <td><span class="pending">Review Soon</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Aman Gupta</td>
+                <td>Amoxicillin</td>
+                <td>3 times/day</td>
+                <td>2026-03-20</td>
+                <td><span class="accepted">Ongoing</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Neha Singh</td>
+                <td>Vitamin C</td>
+                <td>1 time/day</td>
+                <td>2026-03-25</td>
+                <td><span class="rejected">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('patientChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Patients',
+          data: [12, 18, 15, 22, 16, 14, 19],
+          borderColor: '#20cfe8',
+          backgroundColor: 'rgba(32, 207, 232, 0.12)',
+          tension: 0.4,
+          fill: true,
+          pointBackgroundColor: '#20cfe8',
+          pointRadius: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#555' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { color: '#555' }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

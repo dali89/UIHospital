@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient1.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+    <li><a href="dashboarddoctor.html">Dashboard</a></li>
+        <li><a href="patient1.html">My Patients</a></li>
+        <li><a href="appoint.html">Appointments</a></li>
+        <li  class="active"><a href="prescription.html">Prescriptions</a></li>
+        <li><a href="labreport.html">Lab Reports</a></li>
+        <li><a href="ward.html">Wards</a></li>
+        <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Message</a></li>
+           <li><a href="setting.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Prescriptions</h3>
+        <p>Manage patient prescriptions easily</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username">Dr. Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2>All Prescriptions</h2>
+       <button type="reset" class="main-btn" onclick="window.location.href='addprecription.html'">+ Add Prescription</button> 
+    </div>
+
+    <!-- Search + Filter -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Search Prescription</h3>
+      </div>
+
+      <div class="search-area">
+        <input type="text" placeholder="Search by patient name..." class="search-box">
+        <select class="filter-box">
+          <option>Status</option>
+          <option>Ongoing</option>
+          <option>Completed</option>
+        </select>
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+
+    <!-- Prescription Table -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Prescription List</h3>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Patient Name</th>
+              <th>Medicine</th>
+              <th>Dosage</th>
+              <th>Duration</th>
+              <th>Next Review</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Riya Sharma</td>
+              <td>Paracetamol</td>
+              <td>2x/day</td>
+              <td>5 Days</td>
+              <td>22 Mar 2026</td>
+              <td><span class="badge pending">Review Soon</span></td>
+              <td>
+                <button class="table-btn">View</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Aman Gupta</td>
+              <td>Amoxicillin</td>
+              <td>3x/day</td>
+              <td>7 Days</td>
+              <td>20 Mar 2026</td>
+              <td><span class="badge confirmed">Ongoing</span></td>
+              <td>
+                <button class="table-btn">Edit</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Neha Singh</td>
+              <td>Vitamin C</td>
+              <td>1x/day</td>
+              <td>10 Days</td>
+              <td>25 Mar 2026</td>
+              <td><span class="badge discharged">Completed</span></td>
+              <td>
+                <button class="table-btn">View</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

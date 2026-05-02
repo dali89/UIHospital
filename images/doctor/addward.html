@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Ward – MediLab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+      <li><a href="dashboarddoctor.html">Dashboard</a></li>
+      <li><a href="patient1.html">My Patients</a></li>
+      <li><a href="appoint.html">Appointments</a></li>
+      <li><a href="prescription.html">Prescriptions</a></li>
+      <li><a href="labreport.html">Lab Reports</a></li>
+      <li class="active"><a href="ward.html">Wards</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="message.html">Message</a></li>
+      <li><a href="setting.html">Settings</a></li>
+      <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Add New Ward</h3>
+        <p>Manage hospital ward details</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username">Dr. Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Ward Form -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Ward Information</h3>
+      </div>
+
+      <form class="ward-form">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Ward Name</label>
+            <input type="text" placeholder="Enter ward name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Ward Number</label>
+            <input type="number" placeholder="e.g. 102" required>
+          </div>
+
+          <div class="form-group">
+            <label>Total Beds</label>
+            <input type="number" placeholder="Total beds in ward" required>
+          </div>
+
+          <div class="form-group">
+            <label>Available Beds</label>
+            <input type="number" placeholder="Available beds" required>
+          </div>
+
+          <div class="form-group">
+            <label>Ward Type</label>
+            <select>
+              <option>General</option>
+              <option>ICU</option>
+              <option>Emergency</option>
+              <option>Private</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Floor</label>
+            <select>
+              <option>Ground Floor</option>
+              <option>1st Floor</option>
+              <option>2nd Floor</option>
+              <option>3rd Floor</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="form-group full">
+          <label>Description</label>
+          <textarea placeholder="Enter ward details..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="main-btn">Save Ward</button>
+           <button type="reset" class="cancel-btn" onclick="window.location.href='ward.html'">Cancel</button> 
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

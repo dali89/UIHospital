@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+         <li  ><a href="dashboarddoctor.html">Dashboard</a></li>
+        <li><a href="patient1.html">My Patients</a></li>
+        <li ><a href="appoint.html">Appointments</a></li>
+        <li class="active"><a href="prescription.html">Prescriptions</a></li>
+        <li><a href="labreport.html">Lab Reports</a></li>
+        <li><a href="ward.html">Wards</a></li>
+        <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Message</a></li>
+           <li><a href="setting.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Add Prescription</h3>
+        <p>Fill patient medicine details</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username">Dr. Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Prescription Form</h3>
+      </div>
+
+      <form class="prescription-form">
+
+        <div class="form-grid">
+
+          <!-- Patient Name -->
+          <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter patient name" required>
+          </div>
+
+          <!-- Age -->
+          <div class="form-group">
+            <label>Age</label>
+            <input type="number" placeholder="Enter age">
+          </div>
+
+          <!-- Problem -->
+          <div class="form-group">
+            <label>Problem</label>
+            <input type="text" placeholder="e.g. Fever, Cough">
+          </div>
+
+          <!-- Medicine -->
+          <div class="form-group">
+            <label>Medicine</label>
+            <input type="text" placeholder="Enter medicine name">
+          </div>
+
+          <!-- Dosage -->
+          <div class="form-group">
+            <label>Dosage</label>
+            <input type="text" placeholder="e.g. 2 times/day">
+          </div>
+
+          <!-- Duration -->
+          <div class="form-group">
+            <label>Duration</label>
+            <input type="text" placeholder="e.g. 5 Days">
+          </div>
+
+          <!-- Next Review -->
+          <div class="form-group">
+            <label>Next Review Date</label>
+            <input type="date">
+          </div>
+
+          <!-- Status -->
+          <div class="form-group">
+            <label>Status</label>
+            <select>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Review Soon</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Notes -->
+        <div class="form-group full">
+          <label>Doctor Notes</label>
+          <textarea placeholder="Write prescription notes..."></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="main-btn">Save Prescription</button>
+          <button type="reset" class="cancel-btn" onclick="window.location.href='prescription.html'">Cancel</button> 
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

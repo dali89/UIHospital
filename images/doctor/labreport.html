@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient1.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+       <li><a href="dashboarddoctor.html">Dashboard</a></li>
+        <li><a href="patient1.html">My Patients</a></li>
+        <li><a href="appoint.html">Appointments</a></li>
+        <li><a href="prescription.html">Prescriptions</a></li>
+        <li  class="active"><a href="labreport.html">Lab Reports</a></li>
+        <li><a href="ward.html">Wards</a></li>
+        <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Message</a></li>
+           <li><a href="setting.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Lab Reports</h3>
+        <p>View and manage patient reports</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username">Dr. Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2>Report List</h2>
+       <button type="reset" class="main-btn" onclick="window.location.href='addlabreport.html'">+ Add Report</button> 
+    </div>
+
+    <!-- Search + Filter -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Search Reports</h3>
+      </div>
+
+      <div class="search-area">
+        <input type="text" placeholder="Patient name..." class="search-box">
+        <input type="text" placeholder="Test type..." class="search-box">
+        <select class="filter-box">
+          <option>Status</option>
+          <option>Pending</option>
+          <option>Completed</option>
+        </select>
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+
+    <!-- Report Table -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>All Reports</h3>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Patient Name</th>
+              <th>Test Type</th>
+              <th>Date</th>
+              <th>Result</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Rahul Sharma</td>
+              <td>Blood Test</td>
+              <td>22 Mar 2026</td>
+              <td>Normal</td>
+              <td><span class="badge confirmed">Completed</span></td>
+              <td>
+                <button class="table-btn">View</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Anita Verma</td>
+              <td>X-Ray</td>
+              <td>21 Mar 2026</td>
+              <td>Pending</td>
+              <td><span class="badge pending">Pending</span></td>
+              <td>
+                <button class="table-btn">Upload</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Rohan Singh</td>
+              <td>COVID Test</td>
+              <td>20 Mar 2026</td>
+              <td>Negative</td>
+              <td><span class="badge confirmed">Completed</span></td>
+              <td>
+                <button class="table-btn">View</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

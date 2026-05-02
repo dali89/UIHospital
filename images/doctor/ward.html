@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ward.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+  <li><a href="dashboarddoctor.html">Dashboard</a></li>
+        <li><a href="patient1.html">My Patients</a></li>
+        <li><a href="appoint.html">Appointments</a></li>
+        <li><a href="prescription.html">Prescriptions</a></li>
+        <li><a href="labreport.html">Lab Reports</a></li>
+        <li  class="active"><a href="ward.html">Wards</a></li>
+        <li><a href="profile.html">Profile</a></li>
+            <li><a href="message.html">Message</a></li>
+           <li><a href="setting.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+
+       <div class="topbar">
+      <div class="welcome-box">
+        <h3>Wards</h3>
+        <p>Manage all ward records</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username">Dr. Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Topbar -->
+   <div class="topbar search-box">
+  <div class="left">
+    <h2>Ward Management</h2>
+  </div>
+
+  <div class="right">
+    <input type="text" placeholder="Search Patient..." class="search-input">
+<button type="reset" class="add-btn" >Search Ward</button> 
+     <button type="reset" class="main-btn" onclick="window.location.href='addward.html'">+ Add Ward</button> 
+  </div>
+</div>
+      
+    
+
+    <!-- Cards -->
+    <div class="cards-ward">
+      <div class="card-ward">
+        <h3>Total Patients</h3>
+        <p>120</p>
+      </div>
+
+      <div class="card-ward">
+        <h3>Available Beds</h3>
+        <p>35</p>
+      </div>
+
+      <div class="card-ward">
+        <h3>Occupied</h3>
+        <p>85</p>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Ward</th>
+            <th>Bed</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Rahul</td>
+            <td>W-12</td>
+            <td>B-3</td>
+            <td><span class="status admitted">Admitted</span></td>
+          </tr>
+
+          <tr>
+            <td>Anita</td>
+            <td>W-8</td>
+            <td>B-1</td>
+            <td><span class="status observation">Observation</span></td>
+          </tr>
+
+          <tr>
+            <td>Ramesh</td>
+            <td>W-5</td>
+            <td>B-2</td>
+            <td><span class="status discharged">Discharged</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
