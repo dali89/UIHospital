@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab - Medicine Management</title>
+  <link rel="stylesheet" href="med.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+       <li><a href="ind2.html">Dashboard</a></li>
+        <li><a href="s.html">Staff</a></li>
+         <li class="active"><a href="#">Medicine</a></li>
+        <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li><a href="t.html">Treatment</a></li>
+        <li><a href="ind1.html">Pharmacy</a></li>
+        <li><a href="indp.html">Patient</a></li>
+         <li><a href="invoice.html">Invoice</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <section class="medicine-section">
+        <h3>Medicine Management</h3>
+
+        <div class="top-controls">
+          <button class="report-btn">Generate Report</button>
+          <div class="search-box">
+            <input type="text" placeholder="Medicine ID">
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <form class="medicine-form">
+          <div class="form-row">
+            <input type="text" placeholder="Medicine Name">
+            <input type="text" placeholder="Manufacturer">
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Batch Number">
+            <input type="number" placeholder="Price">
+          </div>
+
+          <div class="form-row">
+            <input type="date" placeholder="Manufacture Date">
+            <input type="date" placeholder="Expiry Date">
+          </div>
+
+          <div class="form-row">
+            <input type="number" placeholder="Quantity">
+            <select>
+              <option>Category</option>
+              <option>Tablet</option>
+              <option>Syrup</option>
+              <option>Injection</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <textarea placeholder="Description"></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="button" class="add-btn">Add</button>
+            <button type="button" class="update-btn">Update</button>
+            <button type="button" class="delete-btn">Delete</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Medicine Table -->
+      <section class="recent-medicines">
+        <h3>Available Medicines</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Medicine ID</th>
+              <th>Name</th>
+              <th>Manufacturer</th>
+              <th>Batch No</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Manufacture</th>
+              <th>Expiry</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MED-001</td>
+              <td>Paracetamol</td>
+              <td>ABC Pharma</td>
+              <td>B-1002</td>
+              <td>Tablet</td>
+              <td>120.00</td>
+              <td>200</td>
+              <td>2024-10-10</td>
+              <td>2026-10-10</td>
+              <td><span class="available">Available</span></td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>MED-002</td>
+              <td>Amoxicillin</td>
+              <td>XYZ Labs</td>
+              <td>B-1090</td>
+              <td>Capsule</td>
+              <td>250.00</td>
+              <td>0</td>
+              <td>2024-06-01</td>
+              <td>2025-05-01</td>
+              <td><span class="out">Out of Stock</span></td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

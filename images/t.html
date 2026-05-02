@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab - Treatment Management</title>
+  <link rel="stylesheet" href="t.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+         <li><a href="ind2.html">Dashboard</a></li>
+       <li><a href="s.html">Staff</a></li>
+           <li><a href="med.html">Medicine</a></li>
+        <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li class="active"><a href="#">Treatment</a></li>
+      <li><a href="ind1.html">Pharmacy</a></li>
+       <li><a href="indp.html">Patient</a></li>
+         <li><a href="invoice.html">Invoice</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <section class="medicine-section">
+        <h3>Treatment Management</h3>
+
+        <div class="top-controls">
+          <button class="report-btn">Generate Report</button>
+          <div class="search-box">
+            <input type="text" placeholder="Treatment ID">
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <form class="medicine-form">
+          <div class="form-row">
+            <input type="text" placeholder="Treatment Name">
+            <input type="text" placeholder="Doctor Incharge">
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Patient ID">
+            <input type="number" placeholder="Cost">
+          </div>
+
+          <div class="form-row">
+            <input type="date" placeholder="Start Date">
+            <input type="date" placeholder="End Date">
+          </div>
+
+          <div class="form-row">
+            <textarea placeholder="Treatment Description"></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="button" class="add-btn">Add</button>
+            <button type="button" class="update-btn">Update</button>
+            <button type="button" class="delete-btn">Delete</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Table -->
+      <section class="recent-medicines">
+        <h3>Ongoing Treatments</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Treatment ID</th>
+              <th>Name</th>
+              <th>Doctor</th>
+              <th>Patient</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Cost</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TR-001</td>
+              <td>Physiotherapy</td>
+              <td>Dr. Senanayake</td>
+              <td>PT-102</td>
+              <td>2025-10-01</td>
+              <td>2025-11-01</td>
+              <td>3000</td>
+              <td><span class="available">Ongoing</span></td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

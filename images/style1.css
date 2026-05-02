@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4a47a3;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #4a47a3;
+}
+
+.buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sign-in {
+  background: #ddd;
+}
+
+.register {
+  background: #6c63ff;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.tour-btn {
+  padding: 10px 25px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 350px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  background: #fff;
+  gap: 50px;
+}
+
+.about-text h3 {
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.see-more {
+  background: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  padding: 60px 80px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  padding: 15px;
+  background: #f2f2ff;
+  color: #4a47a3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4a47a3;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero, .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text, .about-text {
+    padding-right: 0;
+  }
+}

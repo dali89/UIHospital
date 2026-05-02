@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Pharmacy Management</title>
+  <link rel="stylesheet" href="std1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+    <li><a href="ind2.html">Dashboard</a></li>
+       <li><a href="s.html">Staff</a></li>
+           <li><a href="med.html">Medicine</a></li>
+      <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li><a href="t.html">Treatment</a></li>
+        <li class="active"><a href="#">Pharmacy</a></li>
+        <li><a href="indp.html">Patient</a></li>
+            <li><a href="invoice.html">Invoice</a></li>
+
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <section class="pharmacy">
+        <h2>Pharmacy Management</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Total Customers</h3>
+            <p>25</p>
+          </div>
+          <div class="card">
+            <h3>Total Medicine</h3>
+            <p>25</p>
+          </div>
+          <div class="card">
+            <h3>Total Manufacturers</h3>
+            <p>25</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <!-- <button><a href="invoice.html">Create Invoice</a></button>
+          <button><a href="ind2.html">Supplier</a></button>
+          <button><a href="med.html">Medicine</a></button> -->
+
+          <button onclick="window.location.href='invoice.html'">Create Invoice</button>
+
+<button onclick="window.location.href='ind2.html'">Supplier</button>
+
+<button onclick="window.location.href='med.html'">Medicine</button>
+        </div>
+
+        <div class="reports">
+          <div class="report">
+            <h4>Purchase Reports</h4>
+            <img src="purch.png" alt="chart">
+          </div>
+          <div class="report">
+            <h4>Sales Reports</h4>
+            <p></p>
+            <img src="Sale12.png" alt="chart">
+          </div>
+          <div class="report">
+            <h4>Stock Reports</h4>
+            <p></p>
+            <img src="Sales2.png" alt="chart">
+          </div>
+        </div>
+
+        <div class="stock-table">
+          <h3>Out of Stock</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Drug Name</th>
+                <th>Expire Date</th>
+                <th>Manufacture Date</th>
+                <th>Price</th>
+                <th>QTY</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td><td>Vitamin C</td><td>2025-04-13</td><td>2023-11-12</td><td>1500</td><td>150</td><td class="available">Available</td>
+              </tr>
+              <tr>
+                <td>2</td><td>Paracetamol</td><td>2026-09-11</td><td>2022-02-04</td><td>500</td><td>0</td><td class="out">Out of Stock</td>
+              </tr>
+              <tr>
+                <td>3</td><td>Asim</td><td>2026-01-11</td><td>2023-04-06</td><td>1400</td><td>50</td><td class="available">Available</td>
+              </tr>
+              <tr>
+                <td>4</td><td>Amoxicillin</td><td>2024-11-12</td><td>2021-11-13</td><td>1200</td><td>0</td><td class="out">Out of Stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

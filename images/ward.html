@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Ward Management</title>
+  <link rel="stylesheet" href="ward.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Lab</a></li>
+        <li class="active"><a href="#">Ward</a></li>
+        <li><a href="#">Treatment</a></li>
+        <li><a href="#">Pharmacy</a></li>
+        <li><a href="#">Patient</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="user-info">
+          <span class="username">Madhusha</span>
+        </div>
+        <div class="hospital-name">MediLab Hospital</div>
+        <div class="user-profile">
+          <span class="username">Prasad</span>
+          <img src="https://via.placeholder.com/30" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <!-- Ward Management Section -->
+      <section class="ward-management">
+        <h2>Ward Management</h2>
+        <button class="generate-report">Generate Report</button>
+
+        <form class="ward-form">
+          <div class="form-row">
+            <input type="text" placeholder="Ward ID">
+            <button type="button" class="search-btn">Search</button>
+          </div>
+
+          <div class="form-grid">
+            <input type="text" placeholder="Ward Name">
+            <input type="number" placeholder="Capacity">
+            <select>
+              <option>Type</option>
+              <option>General</option>
+              <option>Private</option>
+              <option>ICU</option>
+              <option>Emergency</option>
+            </select>
+            <select>
+              <option>Status</option>
+              <option>Available</option>
+              <option>Full</option>
+              <option>Closed</option>
+            </select>
+            <textarea placeholder="Description"></textarea>
+            <input type="text" placeholder="Assigned Doctor ID">
+            <input type="text" placeholder="Assigned Nurse ID">
+          </div>
+
+          <div class="form-buttons">
+            <button class="register">Add Ward</button>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+        </form>
+
+        <!-- Recent Wards Table -->
+        <div class="recent-wards">
+          <h3>Recent Wards</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Ward ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Capacity</th>
+                <th>Status</th>
+                <th>Assigned Doctor</th>
+                <th>Assigned Nurse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>W001</td>
+                <td>General Ward</td>
+                <td>General</td>
+                <td>20</td>
+                <td><span class="status available">Available</span></td>
+                <td>D023</td>
+                <td>N012</td>
+              </tr>
+              <tr>
+                <td>W002</td>
+                <td>ICU Ward</td>
+                <td>ICU</td>
+                <td>8</td>
+                <td><span class="status full">Full</span></td>
+                <td>D045</td>
+                <td>N008</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

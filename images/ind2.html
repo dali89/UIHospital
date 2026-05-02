@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital Dashboard</title>
+  <link rel="stylesheet" href="std2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="s.html">Staff</a></li>
+           <li><a href="med.html">Medicine</a></li>
+        <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li><a href="t.html">Treatment</a></li>
+        <li><a href="ind1.html">Pharmacy</a></li>
+        <li><a href="indp.html">Patient</a></li>
+         <li><a href="invoice.html">Invoice</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <!-- Top Summary Cards -->
+      <section class="summary-cards">
+        <div class="card">
+          <i>👥</i>
+          <h3>Total Patient</h3>
+          <p>20</p>
+        </div>
+        <div class="card">
+          <i>👨‍⚕️</i>
+          <h3>Total Doctors</h3>
+          <p>20</p>
+        </div>
+        <div class="card">
+          <i>🏨</i>
+          <h3>Total Wards</h3>
+          <p>20</p>
+        </div>
+        <div class="card">
+          <i>🧪</i>
+          <h3>Total Labs</h3>
+          <p>20</p>
+        </div>
+      </section>
+
+      <!-- Chart + Appointments -->
+      <section class="charts-appointments">
+        <div class="chart-container">
+          <h3>Patients</h3>
+          <canvas id="patientChart"></canvas>
+        </div>
+
+        <div class="appointments">
+          <h3>Appointments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chance Vaccaro</td>
+                <td>19.07.2023</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Desirae Kentner</td>
+                <td>14.12.2023</td>
+                <td><span class="rejected">Rejected</span></td>
+              </tr>
+              <tr>
+                <td>Palyn Lubin</td>
+                <td>04.11.2023</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Phillip Barber</td>
+                <td>10.09.2023</td>
+                <td><span class="accepted">Accepted</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Recent Doctors -->
+      <section class="recent-doctors">
+        <h3>Recent Doctors</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Name</th><th>Mobile</th><th>Address</th>
+              <th>Consultancy Charge</th><th>Education</th><th>DOB</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>Sam</td><td>0786535231</td><td>Kottawa</td><td>2500.00</td><td>MBBS</td><td>1984-04-13</td><td><span class="online">Online</span></td>
+            </tr>
+            <tr>
+              <td>2</td><td>John</td><td>0747258979</td><td>Kandy</td><td>2500.00</td><td>PhD</td><td>1978-05-13</td><td><span class="offline">Offline</span></td>
+            </tr>
+            <tr>
+              <td>3</td><td>David</td><td>0781478479</td><td>Galle</td><td>2500.00</td><td>MBBS</td><td>1987-04-13</td><td><span class="online">Online</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Out of Stock -->
+      <section class="out-stock">
+        <h3>Out of Stock</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Drug Name</th><th>Expire Date</th><th>Manufacture Date</th><th>Price</th><th>QTY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>Vitamin C</td><td>2025-04-13</td><td>2021-12-13</td><td>1500.00</td><td>150</td>
+            </tr>
+            <tr>
+              <td>2</td><td>Paracetamol</td><td>2026-05-13</td><td>2022-04-04</td><td>500.00</td><td>0</td>
+            </tr>
+            <tr>
+              <td>3</td><td>Amoxicillin</td><td>2024-12-13</td><td>2021-01-13</td><td>1200.00</td><td>270</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('patientChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Patients',
+          data: [1200, 2100, 1800, 2400, 1700, 1600, 1900],
+          borderColor: '#6c63ff',
+          backgroundColor: 'rgba(108,99,255,0.1)',
+          tension: 0.4,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

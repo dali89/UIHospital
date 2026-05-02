@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Staff Management</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li class="active"><a href="#">Staff</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Ward</a></li>
+        <li><a href="#">Treatment</a></li>
+        <li><a href="#">Pharmacy</a></li>
+        <li><a href="#">Patient</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="user-info">
+          <span class="username">Madhusha</span>
+        </div>
+        <div class="hospital-name">MediLab Hospital</div>
+        <div class="user-profile">
+          <span class="username">Prasad</span>
+          <img src="https://via.placeholder.com/30" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <section class="staff-management">
+        <h2>Staff Management</h2>
+        <button class="generate-report">Generate Report</button>
+
+        <form class="staff-form">
+          <div class="form-row">
+            <input type="text" placeholder="ID">
+            <button type="button" class="search-btn">Search</button>
+          </div>
+
+          <div class="form-grid">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+
+            <select>
+              <option>Role</option>
+              <option>Doctor</option>
+              <option>Nurse</option>
+              <option>Receptionist</option>
+            </select>
+
+            <select>
+              <option>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Mobile Number">
+
+            <textarea placeholder="Address"></textarea>
+
+            <input type="text" placeholder="NIC">
+            <input type="date" placeholder="Date of Birth">
+
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+          </div>
+
+          <div class="form-buttons">
+            <button class="register">Register</button>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+        </form>
+
+        <div class="recent-doctors">
+          <h3>Recent Doctors</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>NIC</th>
+                <th>DOB</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Madhusha</td>
+                <td>Doctor</td>
+                <td>Male</td>
+                <td>madhusha@gmail.com</td>
+                <td>078-6642216</td>
+                <td>84632626</td>
+                <td>1999-08-13</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Madhusha</td>
+                <td>Doctor</td>
+                <td>Male</td>
+                <td>madhusha@gmail.com</td>
+                <td>078-6642216</td>
+                <td>84632626</td>
+                <td>1999-08-13</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Lab Management</title>
+  <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Staff</a></li>
+        <li class="active"><a href="#">Lab</a></li>
+        <li><a href="#">Ward</a></li>
+        <li><a href="#">Treatment</a></li>
+        <li><a href="#">Pharmacy</a></li>
+        <li><a href="#">Patient</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="user-info">
+          <span class="username">Madhusha</span>
+        </div>
+        <div class="hospital-name">MediLab Hospital</div>
+        <div class="user-profile">
+          <span class="username">Prasad</span>
+          <img src="https://via.placeholder.com/30" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <!-- Lab Management Section -->
+      <section class="lab-management">
+        <h2>Lab Management</h2>
+        <button class="generate-report">Generate Report</button>
+
+        <form class="lab-form">
+          <div class="form-row">
+            <input type="text" placeholder="Lab Test ID">
+            <button type="button" class="search-btn">Search</button>
+          </div>
+
+          <div class="form-grid">
+            <input type="text" placeholder="Patient ID">
+            <input type="text" placeholder="Doctor ID">
+            <input type="text" placeholder="Test Name">
+            <input type="text" placeholder="Sample Type (e.g. Blood, Urine)">
+            <input type="date" placeholder="Test Date">
+            <input type="date" placeholder="Result Date">
+            <textarea placeholder="Remarks / Notes"></textarea>
+
+            <select>
+              <option>Status</option>
+              <option>Pending</option>
+              <option>In Progress</option>
+              <option>Completed</option>
+            </select>
+
+            <input type="text" placeholder="Test Cost (LKR)">
+          </div>
+
+          <div class="form-buttons">
+            <button class="register">Add Test</button>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+        </form>
+
+        <!-- Recent Lab Tests Table -->
+        <div class="recent-labs">
+          <h3>Recent Lab Tests</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Test ID</th>
+                <th>Patient ID</th>
+                <th>Doctor ID</th>
+                <th>Test Name</th>
+                <th>Sample Type</th>
+                <th>Test Date</th>
+                <th>Result Date</th>
+                <th>Status</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>L001</td>
+                <td>P123</td>
+                <td>D045</td>
+                <td>Blood Sugar</td>
+                <td>Blood</td>
+                <td>2025-10-20</td>
+                <td>2025-10-21</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>L002</td>
+                <td>P567</td>
+                <td>D078</td>
+                <td>Urine Test</td>
+                <td>Urine</td>
+                <td>2025-11-01</td>
+                <td>2025-11-03</td>
+                <td><span class="status progress">In Progress</span></td>
+                <td>1000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

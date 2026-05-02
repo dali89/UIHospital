@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medinova</title>
+  <link rel="stylesheet" href="ststs.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Medical Packages Section -->
+  <section class="packages section-space">
+    <div class="container">
+      <div class="section-title">
+        <h6 class="section-tag">MEDICAL PACKAGES</h6>
+        <h2>Awesome Medical Programs</h2>
+      </div>
+
+      <div class="packages-bg-shape"></div>
+
+      <div class="packages-slider">
+
+        <!-- Slide 1 -->
+        <div class="packages-grid slide active">
+
+          <div class="package-card">
+            <div class="package-header pkg-1">
+              <div class="package-overlay">
+                <h3>Pregnancy Care</h3>
+                <div class="price"><sup>$</sup>49<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Highly Experienced Doctors</li>
+                <li>Highest Success Rate</li>
+                <li>Telephone Service</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header pkg-2">
+              <div class="package-overlay">
+                <h3>Health Checkup</h3>
+                <div class="price"><sup>$</sup>99<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Highly Experienced Doctors</li>
+                <li>Highest Success Rate</li>
+                <li>Telephone Service</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header pkg-3">
+              <div class="package-overlay">
+                <h3>Dental Care</h3>
+                <div class="price"><sup>$</sup>149<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Highly Experienced Doctors</li>
+                <li>Highest Success Rate</li>
+                <li>Telephone Service</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="packages-grid slide">
+
+          <div class="package-card">
+            <div class="package-header pkg-1">
+              <div class="package-overlay">
+                <h3>Heart Care</h3>
+                <div class="price"><sup>$</sup>199<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Expert Doctors</li>
+                <li>Advanced Equipment</li>
+                <li>24/7 Support</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header pkg-2">
+              <div class="package-overlay">
+                <h3>Eye Care</h3>
+                <div class="price"><sup>$</sup>79<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Expert Doctors</li>
+                <li>Advanced Equipment</li>
+                <li>24/7 Support</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+          <div class="package-card">
+            <div class="package-header pkg-3">
+              <div class="package-overlay">
+                <h3>Skin Care</h3>
+                <div class="price"><sup>$</sup>59<span>/ Year</span></div>
+              </div>
+            </div>
+            <div class="package-body">
+              <ul>
+                <li>Emergency Medical Treatment</li>
+                <li>Expert Doctors</li>
+                <li>Advanced Equipment</li>
+                <li>24/7 Support</li>
+              </ul>
+              <a href="#" class="btn-apply">Apply Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="package-arrows">
+        <button class="arrow-btn prev">←</button>
+        <button class="arrow-btn next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll(".packages-slider .slide");
+    const nextBtnPkg = document.querySelector(".arrow-btn.next");
+    const prevBtnPkg = document.querySelector(".arrow-btn.prev");
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+
+    nextBtnPkg.onclick = () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    };
+
+    prevBtnPkg.onclick = () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    };
+  </script>
+
+</body>
+</html>

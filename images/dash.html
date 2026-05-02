@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Dashboard</title>
+  <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li class="active"><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="treatment.html">Treatment</a></li>
+        <li><a href="pharmacy.html">Pharmacy</a></li>
+        <li><a href="patient.html">Patient</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="user-info">
+          <span class="username">Madhusha</span>
+        </div>
+        <div class="hospital-name">MediLab Hospital</div>
+        <div class="user-profile">
+          <span class="username">Prasad</span>
+          <img src="https://via.placeholder.com/30" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <section class="dashboard">
+        <h2>Dashboard Overview</h2>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Staff</h3>
+            <p>25</p>
+          </div>
+          <div class="card">
+            <h3>Total Patients</h3>
+            <p>120</p>
+          </div>
+          <div class="card">
+            <h3>Active Labs</h3>
+            <p>18</p>
+          </div>
+          <div class="card">
+            <h3>Wards Occupied</h3>
+            <p>10</p>
+          </div>
+        </div>
+
+        <!-- Charts and Tables -->
+        <div class="charts-appointments">
+          <div class="chart-container">
+            <h3>Weekly Appointments</h3>
+            <img src="https://via.placeholder.com/400x200?text=Chart+Placeholder" alt="Chart">
+          </div>
+
+          <div class="appointments">
+            <h3>Recent Appointments</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Patient</th>
+                  <th>Doctor</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A101</td>
+                  <td>John Doe</td>
+                  <td>Dr. Smith</td>
+                  <td>2025-11-05</td>
+                  <td><span class="accepted">Accepted</span></td>
+                </tr>
+                <tr>
+                  <td>A102</td>
+                  <td>Jane Doe</td>
+                  <td>Dr. Allen</td>
+                  <td>2025-11-06</td>
+                  <td><span class="pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>A103</td>
+                  <td>Mark Lee</td>
+                  <td>Dr. Taylor</td>
+                  <td>2025-11-07</td>
+                  <td><span class="rejected">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Recent Staff -->
+        <div class="recent-staff">
+          <h3>Recent Staff Members</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Email</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>S001</td>
+                <td>Dr. Prasad</td>
+                <td>Doctor</td>
+                <td>prasad@medilab.com</td>
+                <td><span class="online">Online</span></td>
+              </tr>
+              <tr>
+                <td>S002</td>
+                <td>Nurse Maya</td>
+                <td>Nurse</td>
+                <td>maya@medilab.com</td>
+                <td><span class="offline">Offline</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab Hospital - Treatment Management</title>
+  <link rel="stylesheet" href="treat.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Ward</a></li>
+        <li class="active"><a href="#">Treatment</a></li>
+        <li><a href="#">Pharmacy</a></li>
+        <li><a href="#">Patient</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="user-info">
+          <span class="username">Madhusha</span>
+        </div>
+        <div class="hospital-name">MediLab Hospital</div>
+        <div class="user-profile">
+          <span class="username">Prasad</span>
+          <img src="https://via.placeholder.com/30" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <!-- Treatment Management Section -->
+      <section class="treatment-management">
+        <h2>Treatment Management</h2>
+        <button class="generate-report">Generate Report</button>
+
+        <form class="treatment-form">
+          <div class="form-row">
+            <input type="text" placeholder="Treatment ID">
+            <button type="button" class="search-btn">Search</button>
+          </div>
+
+          <div class="form-grid">
+            <input type="text" placeholder="Patient ID">
+            <input type="text" placeholder="Doctor ID">
+
+            <input type="text" placeholder="Treatment Name">
+            <input type="text" placeholder="Ward ID">
+
+            <textarea placeholder="Description"></textarea>
+
+            <input type="date" placeholder="Start Date">
+            <input type="date" placeholder="End Date">
+
+            <select>
+              <option>Status</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Pending</option>
+            </select>
+
+            <input type="text" placeholder="Cost (LKR)">
+          </div>
+
+          <div class="form-buttons">
+            <button class="register">Add Treatment</button>
+            <button class="update">Update</button>
+            <button class="delete">Delete</button>
+          </div>
+        </form>
+
+        <!-- Recent Treatments Table -->
+        <div class="recent-treatments">
+          <h3>Recent Treatments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Treatment ID</th>
+                <th>Patient ID</th>
+                <th>Doctor ID</th>
+                <th>Treatment Name</th>
+                <th>Ward</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>T001</td>
+                <td>P123</td>
+                <td>D045</td>
+                <td>Heart Surgery</td>
+                <td>Ward 2</td>
+                <td>2025-10-15</td>
+                <td>2025-10-25</td>
+                <td><span class="status ongoing">Ongoing</span></td>
+                <td>450,000</td>
+              </tr>
+              <tr>
+                <td>T002</td>
+                <td>P098</td>
+                <td>D032</td>
+                <td>Fracture Fixation</td>
+                <td>Ward 5</td>
+                <td>2025-09-10</td>
+                <td>2025-09-20</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>125,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
