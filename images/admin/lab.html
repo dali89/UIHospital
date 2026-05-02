@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Lab - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css" />
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+         <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li class="active"><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Lab Management</h3>
+          <p>Manage lab tests, patient reports and test status</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>Lab Overview</h2>
+          <button class="main-btn">+ Add Test</button>
+        </div>
+
+        <div class="summary-cards">
+          <div class="card">
+            <span class="card-label">Total Tests</span>
+            <h3>540</h3>
+            <p>All registered lab tests</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Pending Reports</span>
+            <h3>37</h3>
+            <p>Need completion</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Completed Reports</span>
+            <h3>468</h3>
+            <p>Successfully processed</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Emergency Tests</span>
+            <h3>12</h3>
+            <p>Urgent cases today</p>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Search Lab Records</h3>
+          </div>
+
+          <div class="search-area">
+            <input type="text" placeholder="Search by patient name or test ID..." class="search-box">
+            <select class="filter-box">
+              <option>All Test Types</option>
+              <option>Blood Test</option>
+              <option>X-Ray</option>
+              <option>Urine Test</option>
+              <option>MRI</option>
+            </select>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="panel-box table-box">
+          <div class="box-header">
+            <h3>Lab Test Records</h3>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Test ID</th>
+                  <th>Patient</th>
+                  <th>Test Type</th>
+                  <th>Date</th>
+                  <th>Technician</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>L101</td>
+                  <td>Dali Vaishnav</td>
+                  <td>Blood Test</td>
+                  <td>20-03-2026</td>
+                  <td>Ravi Kumar</td>
+                  <td><span class="badge confirmed">Completed</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>L102</td>
+                  <td>Rohan Gupta</td>
+                  <td>X-Ray</td>
+                  <td>20-03-2026</td>
+                  <td>Pooja Singh</td>
+                  <td><span class="badge pending">Pending</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>L103</td>
+                  <td>Priya Singh</td>
+                  <td>MRI</td>
+                  <td>19-03-2026</td>
+                  <td>Aman Verma</td>
+                  <td><span class="badge cancelled">Urgent</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>L104</td>
+                  <td>Arjun Yadav</td>
+                  <td>Urine Test</td>
+                  <td>19-03-2026</td>
+                  <td>Neha Sharma</td>
+                  <td><span class="badge confirmed">Completed</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>L105</td>
+                  <td>Karan Patel</td>
+                  <td>CT Scan</td>
+                  <td>18-03-2026</td>
+                  <td>Ritika Jain</td>
+                  <td><span class="badge pending">Processing</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

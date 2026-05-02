@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Invoice - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin-style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+             <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li ><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li class="active"><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Invoice Management</h3>
+          <p>Create, check and manage patient billing records</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>Billing Overview</h2>
+          <button class="main-btn" onclick="window.location.href='createinvoice.html'">+ Create Invoice</button>
+        </div>
+
+        <div class="summary-cards">
+          <div class="card">
+            <span class="card-label">Total Invoices</span>
+            <h3>210</h3>
+            <p>Generated this month</p>
+          </div>
+          <div class="card">
+            <span class="card-label">Paid</span>
+            <h3>168</h3>
+            <p>Invoices cleared</p>
+          </div>
+          <div class="card">
+            <span class="card-label">Pending</span>
+            <h3>32</h3>
+            <p>Awaiting payment</p>
+          </div>
+          <div class="card">
+            <span class="card-label">Cancelled</span>
+            <h3>10</h3>
+            <p>Removed records</p>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Invoice Records</h3>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Invoice ID</th>
+                  <th>Patient Name</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Payment Mode</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INV101</td>
+                  <td>Riya Sharma</td>
+                  <td>₹4,500</td>
+                  <td>20-03-2026</td>
+                  <td>Card</td>
+                  <td><span class="badge confirmed">Paid</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>INV102</td>
+                  <td>Arjun Verma</td>
+                  <td>₹2,200</td>
+                  <td>19-03-2026</td>
+                  <td>Cash</td>
+                  <td><span class="badge pending">Pending</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>INV103</td>
+                  <td>Sneha Singh</td>
+                  <td>₹8,900</td>
+                  <td>18-03-2026</td>
+                  <td>UPI</td>
+                  <td><span class="badge confirmed">Paid</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>INV104</td>
+                  <td>Rahul Yadav</td>
+                  <td>₹1,750</td>
+                  <td>17-03-2026</td>
+                  <td>Cash</td>
+                  <td><span class="badge cancelled">Cancelled</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

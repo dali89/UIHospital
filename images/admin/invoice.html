@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab - Invoice Management</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+          <li><a href="ind2.html">Dashboard</a></li>
+       <li><a href="s.html">Staff</a></li>
+           <li><a href="med.html">Medicine</a></li>
+      <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li><a href="t.html">Treatment</a></li>
+        <li><a href="ind1.html">Pharmacy</a></li>
+        <li><a href="indp.html">Patient</a></li>
+        <li class="active"><a href="#">Invoice</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <section class="invoice-section">
+        <h3>Invoice Management</h3>
+
+        <div class="top-controls">
+          <button class="report-btn">Generate Report</button>
+          <div class="search-box">
+            <input type="text" placeholder="Invoice ID">
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <form class="invoice-form">
+          <div class="form-row">
+            <input type="text" placeholder="Patient Name">
+            <input type="text" placeholder="Doctor Name">
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="Medicine Name">
+            <input type="number" placeholder="Quantity">
+          </div>
+
+          <div class="form-row">
+            <input type="number" placeholder="Price">
+            <input type="date" placeholder="Invoice Date">
+          </div>
+
+          <div class="form-row">
+            <textarea placeholder="Description"></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="button" class="add-btn">Add</button>
+            <button type="button" class="update-btn">Update</button>
+            <button type="button" class="delete-btn">Delete</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Invoice Table -->
+      <section class="recent-invoices">
+        <h3>Recent Invoices</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice ID</th>
+              <th>Patient Name</th>
+              <th>Doctor</th>
+              <th>Medicine</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>INV-001</td>
+              <td>Sam</td>
+              <td>Dr. John</td>
+              <td>Paracetamol</td>
+              <td>2</td>
+              <td>100.00</td>
+              <td>200.00</td>
+              <td>2025-11-07</td>
+              <td><span class="paid">Paid</span></td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>INV-002</td>
+              <td>David</td>
+              <td>Dr. Mathew</td>
+              <td>Vitamin C</td>
+              <td>1</td>
+              <td>150.00</td>
+              <td>150.00</td>
+              <td>2025-11-05</td>
+              <td><span class="pending">Pending</span></td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

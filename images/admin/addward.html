@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Reports - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addward.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+         <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li class="active"><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Ward Management</h3>
+          <p>Manage all ward records</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <div class="panel-box">
+        <h2 class="title">Ward Details</h2>
+
+        <form class="ward-form">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Ward Name</label>
+              <input type="text" placeholder="Enter ward name">
+            </div>
+
+            <div class="form-group">
+              <label>Ward Type</label>
+              <select>
+                <option>Select Type</option>
+                <option>General Ward</option>
+                <option>Private Room</option>
+                <option>Semi-Private</option>
+                <option>ICU</option>
+                <option>Emergency</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Capacity (Beds)</label>
+              <input type="number" placeholder="Total beds">
+            </div>
+
+            <div class="form-group">
+              <label>Charges Per Day</label>
+              <input type="number" placeholder="₹ Amount">
+            </div>
+
+            <div class="form-group full">
+              <label>Description</label>
+              <textarea placeholder="Enter ward description"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="main-btn">Save Ward</button>
+            <button type="reset" class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

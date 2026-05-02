@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin1.css">
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Patient</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Doctors</a></li>
+        <li><a href="#">Lab</a></li>
+        <li><a href="#">Ward</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Invoice</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Admin Dashboard</h3>
+          <p>Manage hospital operations, records, and reports efficiently</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/40" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h2>Dashboard Overview</h2>
+
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Patients</h3>
+            <p>320</p>
+          </div>
+          <div class="card">
+            <h3>Total Staff</h3>
+            <p>85</p>
+          </div>
+          <div class="card">
+            <h3>Total Doctors</h3>
+            <p>42</p>
+          </div>
+          <div class="card">
+            <h3>Lab Reports</h3>
+            <p>156</p>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <div class="action-buttons">
+            <a href="#" class="action-btn">Add Patient</a>
+            <a href="#" class="action-btn">Add Staff</a>
+            <a href="#" class="action-btn">Generate Report</a>
+            <a href="#" class="action-btn">Create Invoice</a>
+          </div>
+        </div>
+
+        <div class="reports-box">
+          <h3>Recent Records</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role / Department</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>P201</td>
+                <td>Dali Vaishnav</td>
+                <td>Patient</td>
+                <td>2026-03-20</td>
+                <td><span class="confirmed">Active</span></td>
+              </tr>
+              <tr>
+                <td>D102</td>
+                <td>Dr. Sharma</td>
+                <td>Cardiology</td>
+                <td>2026-03-19</td>
+                <td><span class="confirmed">Available</span></td>
+              </tr>
+              <tr>
+                <td>S155</td>
+                <td>Ritika Singh</td>
+                <td>Staff - Reception</td>
+                <td>2026-03-18</td>
+                <td><span class="pending">On Duty</span></td>
+              </tr>
+              <tr>
+                <td>L089</td>
+                <td>Blood Test Report</td>
+                <td>Lab</td>
+                <td>2026-03-17</td>
+                <td><span class="cancelled">Pending Review</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+         <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li class="active"><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+      <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+       <h3>Pharmacy Management</h3>
+<p>Manage medicines, stock levels, suppliers, and pharmacy operations efficiently.</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="pharmacy">
+        <div class="section-header">
+          <h2>Admin Pharmacy Dashboard</h2>
+          <p>Manage pharmacy operations, medicine stock, invoices and reports</p>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="cards">
+          <div class="card">
+            <span class="card-icon">👥</span>
+            <h3>Total Customers</h3>
+            <p>25</p>
+          </div>
+
+          <div class="card">
+            <span class="card-icon">💊</span>
+            <h3>Total Medicine</h3>
+            <p>25</p>
+          </div>
+
+          <div class="card">
+            <span class="card-icon">🏭</span>
+            <h3>Total Manufacturers</h3>
+            <p>25</p>
+          </div>
+
+          <div class="card">
+            <span class="card-icon">🧾</span>
+            <h3>Total Invoices</h3>
+            <p>18</p>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button onclick="window.location.href='invoice.html'">Create Invoice</button>
+          <button onclick="window.location.href='ind2.html'">Supplier</button>
+          <button onclick="window.location.href='med.html'">Medicine</button>
+          <button>Download Report</button>
+        </div>
+
+        <!-- Reports -->
+        <div class="reports">
+          <div class="report">
+            <h4>Purchase Reports</h4>
+            <img src="purch.png" alt="Purchase Reports">
+          </div>
+
+          <div class="report">
+            <h4>Sales Reports</h4>
+            <img src="Sale12.png" alt="Sales Reports">
+          </div>
+
+          <div class="report">
+            <h4>Stock Reports</h4>
+            <img src="Sales2.png" alt="Stock Reports">
+          </div>
+        </div>
+
+        <!-- Stock Table -->
+        <div class="stock-table">
+          <h3>Out of Stock / Inventory Status</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Drug Name</th>
+                  <th>Expire Date</th>
+                  <th>Manufacture Date</th>
+                  <th>Price</th>
+                  <th>QTY</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Vitamin C</td>
+                  <td>2025-04-13</td>
+                  <td>2023-11-12</td>
+                  <td>1500</td>
+                  <td>150</td>
+                  <td><span class="status available">Available</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Paracetamol</td>
+                  <td>2026-09-11</td>
+                  <td>2022-02-04</td>
+                  <td>500</td>
+                  <td>0</td>
+                  <td><span class="status out">Out of Stock</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Asim</td>
+                  <td>2026-01-11</td>
+                  <td>2023-04-06</td>
+                  <td>1400</td>
+                  <td>50</td>
+                  <td><span class="status available">Available</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Amoxicillin</td>
+                  <td>2024-11-12</td>
+                  <td>2021-11-13</td>
+                  <td>1200</td>
+                  <td>0</td>
+                  <td><span class="status out">Out of Stock</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

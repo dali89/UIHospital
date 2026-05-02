@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+         <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li class="active"><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Patient Management</h3>
+          <p>Manage all patient records, admissions and medical details</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>Patients Overview</h2>
+         
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+          <div class="card">
+            <span class="card-label">Total Patients</span>
+            <h3>1,248</h3>
+            <p>Registered patients</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Admitted</span>
+            <h3>324</h3>
+            <p>Currently admitted</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Discharged</span>
+            <h3>890</h3>
+            <p>Successfully discharged</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Critical Cases</span>
+            <h3>34</h3>
+            <p>Under observation</p>
+          </div>
+        </div>
+
+        <!-- Search + Filter -->
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Search Patients</h3>
+          </div>
+
+          <div class="search-area">
+            <input type="text" placeholder="Search by patient name or ID..." class="search-box">
+            <select class="filter-box">
+              <option>All Status</option>
+              <option>Active</option>
+              <option>Admitted</option>
+              <option>Discharged</option>
+              <option>Critical</option>
+            </select>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <!-- Patients Table -->
+        <div class="panel-box table-box">
+          <div class="box-header">
+            <h3>Patient Records</h3>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Department</th>
+                  <th>Doctor</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P101</td>
+                  <td>Dali Vaishnav</td>
+                  <td>22</td>
+                  <td>Female</td>
+                  <td>General</td>
+                  <td>Dr. Sharma</td>
+                  <td><span class="badge confirmed">Active</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>P102</td>
+                  <td>Rohan Gupta</td>
+                  <td>31</td>
+                  <td>Male</td>
+                  <td>Cardiology</td>
+                  <td>Dr. Mehta</td>
+                  <td><span class="badge pending">Admitted</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>P103</td>
+                  <td>Priya Singh</td>
+                  <td>27</td>
+                  <td>Female</td>
+                  <td>Neurology</td>
+                  <td>Dr. Khan</td>
+                  <td><span class="badge cancelled">Critical</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>P104</td>
+                  <td>Arjun Yadav</td>
+                  <td>40</td>
+                  <td>Male</td>
+                  <td>Orthopedics</td>
+                  <td>Dr. Arora</td>
+                  <td><span class="badge discharged">Discharged</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>P105</td>
+                  <td>Neha Verma</td>
+                  <td>29</td>
+                  <td>Female</td>
+                  <td>Dermatology</td>
+                  <td>Dr. Reddy</td>
+                  <td><span class="badge confirmed">Active</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

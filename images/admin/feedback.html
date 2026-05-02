@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+              <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li ><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li class="active"><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li ><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <!-- <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Feedback Management</h3>
+          <p>Review patient feedback and ratings</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/40" alt="Admin Avatar" class="avatar">
+        </div>
+      </header> -->
+
+
+          <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Patient Management</h3>
+          <p>Manage all patient records, admissions and medical details</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h2>Patient Feedback</h2>
+
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Reviews</h3>
+            <p>126</p>
+          </div>
+          <div class="card">
+            <h3>Positive</h3>
+            <p>98</p>
+          </div>
+          <div class="card">
+            <h3>Pending Review</h3>
+            <p>12</p>
+          </div>
+          <div class="card">
+            <h3>Average Rating</h3>
+            <p>4.6</p>
+          </div>
+        </div>
+
+        <div class="reports-box">
+          <h3>Recent Feedback</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Feedback ID</th>
+                <th>Patient Name</th>
+                <th>Doctor</th>
+                <th>Rating</th>
+                <th>Message</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>F101</td>
+                <td>Riya Sharma</td>
+                <td>Dr. Mehta</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>Very good service and helpful staff.</td>
+                <td><span class="confirmed">Reviewed</span></td>
+              </tr>
+              <tr>
+                <td>F102</td>
+                <td>Aman Verma</td>
+                <td>Dr. Arora</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>Doctor was polite and consultation was smooth.</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>F103</td>
+                <td>Sneha Patel</td>
+                <td>Dr. Sharma</td>
+                <td>⭐⭐⭐</td>
+                <td>Waiting time was a bit long.</td>
+                <td><span class="confirmed">Reviewed</span></td>
+              </tr>
+              <tr>
+                <td>F104</td>
+                <td>Rahul Singh</td>
+                <td>Dr. Khan</td>
+                <td>⭐⭐</td>
+                <td>Need improvement in appointment handling.</td>
+                <td><span class="cancelled">Flagged</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

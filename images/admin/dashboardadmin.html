@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="patient.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+         <li  class="active"><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+
+    <!-- <main class="main-content">
+
+     
+      <header class="topbar">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p>Welcome back, Admin</p>
+        </div>
+
+        <div class="topbar-right">
+          <input type="text" placeholder="Search here..." />
+          <div class="admin-profile">Admin</div>
+        </div>
+      </header> -->
+
+          <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Patient Management</h3>
+          <p>Manage all patient records, admissions and medical details</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <!-- Cards -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Patients</h3>
+          <p>1,248</p>
+          <span>+12% this month</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Staff</h3>
+          <p>186</p>
+          <span>+5 new members</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Appointments</h3>
+          <p>326</p>
+          <span>24 scheduled today</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>Revenue</h3>
+          <p>$12,840</p>
+          <span>+8.4% growth</span>
+        </div>
+      </section>
+
+      <!-- Middle Layout -->
+      <section class="content-grid">
+
+        <!-- Left -->
+        <div class="left-panel">
+
+          <div class="dashboard-box">
+            <div class="box-header">
+              <h2>Hospital Overview</h2>
+              <button class="main-btn" onclick="window.location.href='report.html'">View Report</button>
+            </div>
+
+            <div class="overview-grid">
+              <div class="mini-card">
+                <h4>Doctors</h4>
+                <p>42</p>
+              </div>
+              <div class="mini-card">
+                <h4>Nurses</h4>
+                <p>68</p>
+              </div>
+              <div class="mini-card">
+                <h4>Available Beds</h4>
+                <p>120</p>
+              </div>
+              <div class="mini-card">
+                <h4>Lab Tests</h4>
+                <p>89</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-box">
+            <div class="box-header">
+              <h2>Recent Patients</h2>
+              <button>See All</button>
+            </div>
+
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#P102</td>
+                    <td>John Mathew</td>
+                    <td>Cardiology</td>
+                    <td><span class="status active-status">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>#P103</td>
+                    <td>Emma Joseph</td>
+                    <td>Neurology</td>
+                    <td><span class="status pending-status">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>#P104</td>
+                    <td>Daniel Smith</td>
+                    <td>Orthopedic</td>
+                    <td><span class="status active-status">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>#P105</td>
+                    <td>Sophia Lee</td>
+                    <td>Pediatrics</td>
+                    <td><span class="status inactive-status">Inactive</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="right-panel">
+
+          <div class="dashboard-box">
+            <div class="box-header">
+              <h2>Quick Actions</h2>
+            </div>
+
+            <div class="action-buttons">
+              <button class="main-btn" onclick="window.location.href='addlab'">Add Labs</button>
+              <button>Add Staff</button>
+              <button>Create Report</button>
+              <button>Manage Bills</button>
+            </div>
+          </div>
+
+          <div class="dashboard-box">
+            <div class="box-header">
+              <h2>Recent Activity</h2>
+            </div>
+
+            <ul class="activity-list">
+              <li>New patient registered - <strong>10 mins ago</strong></li>
+              <li>Staff profile updated - <strong>25 mins ago</strong></li>
+              <li>Appointment booked - <strong>1 hour ago</strong></li>
+              <li>Revenue report generated - <strong>2 hours ago</strong></li>
+              <li>Medicine stock updated - <strong>3 hours ago</strong></li>
+            </ul>
+          </div>
+
+          <div class="dashboard-box">
+            <div class="box-header">
+              <h2>Notifications</h2>
+            </div>
+
+            <div class="notifications">
+              <p>🔔 5 new appointment requests</p>
+              <p>🔔 2 lab reports pending</p>
+              <p>🔔 8 medicines low in stock</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>

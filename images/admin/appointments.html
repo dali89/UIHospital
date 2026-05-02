@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+          <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li class="active"  ><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+<!-- 
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Appointment Management</h3>
+          <p>Track all booked, pending, and cancelled appointments</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/40" alt="Admin Avatar" class="avatar">
+        </div>
+      </header> -->
+
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Patient Management</h3>
+          <p>Manage all patient records, admissions and medical details</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+
+      <section class="dashboard">
+        <h2>Appointments</h2>
+
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Appointments</h3>
+            <p>245</p>
+          </div>
+          <div class="card">
+            <h3>Confirmed</h3>
+            <p>180</p>
+          </div>
+          <div class="card">
+            <h3>Pending</h3>
+            <p>42</p>
+          </div>
+          <div class="card">
+            <h3>Cancelled</h3>
+            <p>23</p>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <div class="action-buttons">
+            <a href="#" class="action-btn">Add Appointment</a>
+            <a href="#" class="action-btn">Export List</a>
+            <a href="#" class="action-btn">Manage Slots</a>
+            <a href="#" class="action-btn">View Calendar</a>
+          </div>
+        </div>
+
+        <div class="reports-box">
+          <h3>Appointment List</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>App. ID</th>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Department</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A301</td>
+                <td>Dali Vaishnav</td>
+                <td>Dr. Sharma</td>
+                <td>Cardiology</td>
+                <td>2026-03-22</td>
+                <td>10:00 AM</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>A302</td>
+                <td>Rohan Gupta</td>
+                <td>Dr. Mehta</td>
+                <td>Orthopedics</td>
+                <td>2026-03-23</td>
+                <td>12:30 PM</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>A303</td>
+                <td>Priya Singh</td>
+                <td>Dr. Khan</td>
+                <td>Neurology</td>
+                <td>2026-03-24</td>
+                <td>03:15 PM</td>
+                <td><span class="cancelled">Cancelled</span></td>
+              </tr>
+              <tr>
+                <td>A304</td>
+                <td>Arjun Yadav</td>
+                <td>Dr. Arora</td>
+                <td>Dermatology</td>
+                <td>2026-03-25</td>
+                <td>11:00 AM</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

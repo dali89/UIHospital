@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Ward - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css" />
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+             <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li class="active"><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Ward Management</h3>
+          <p>Manage wards, beds and patient room allocations</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>Ward Overview</h2>
+          <button class="main-btn" onclick="window.location.href='addward.html'">+ Add Ward</button>
+        </div>
+
+        <div class="summary-cards">
+          <div class="card">
+            <span class="card-label">Total Wards</span>
+            <h3>28</h3>
+            <p>Hospital ward units</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Occupied Beds</span>
+            <h3>184</h3>
+            <p>Currently in use</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Vacant Beds</span>
+            <h3>46</h3>
+            <p>Available for admission</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">ICU Beds</span>
+            <h3>10</h3>
+            <p>Critical care units</p>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Search Ward Details</h3>
+          </div>
+
+          <div class="search-area">
+            <input type="text" placeholder="Search by ward name or bed no..." class="search-box">
+            <select class="filter-box">
+              <option>All Wards</option>
+              <option>General Ward</option>
+              <option>ICU</option>
+              <option>Emergency</option>
+              <option>Private Room</option>
+            </select>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="panel-box table-box">
+          <div class="box-header">
+            <h3>Ward Records</h3>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ward ID</th>
+                  <th>Ward Name</th>
+                  <th>Floor</th>
+                  <th>Total Beds</th>
+                  <th>Available</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>W101</td>
+                  <td>General Ward A</td>
+                  <td>1st Floor</td>
+                  <td>30</td>
+                  <td>8</td>
+                  <td><span class="badge confirmed">Available</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>W102</td>
+                  <td>ICU Unit</td>
+                  <td>2nd Floor</td>
+                  <td>12</td>
+                  <td>2</td>
+                  <td><span class="badge cancelled">Critical</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>W103</td>
+                  <td>Emergency Ward</td>
+                  <td>Ground Floor</td>
+                  <td>20</td>
+                  <td>5</td>
+                  <td><span class="badge pending">Limited</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>W104</td>
+                  <td>Private Room Block</td>
+                  <td>3rd Floor</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td><span class="badge confirmed">Available</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>W105</td>
+                  <td>Pediatric Ward</td>
+                  <td>2nd Floor</td>
+                  <td>18</td>
+                  <td>6</td>
+                  <td><span class="badge pending">Busy</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

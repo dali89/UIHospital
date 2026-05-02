@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Doctors - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="patient.css" />
+  
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+               <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li class="active"><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Doctor Management</h3>
+          <p>Manage doctor records, departments and availability</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>Doctors Overview</h2>
+          <button class="main-btn" onclick="window.location.href='adddoctor.html'">+ Add Doctor</button>
+        </div>
+
+        <div class="summary-cards">
+          <div class="card">
+            <span class="card-label">Total Doctors</span>
+            <h3>56</h3>
+            <p>Registered specialists</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Available</span>
+            <h3>41</h3>
+            <p>Currently on duty</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Departments</span>
+            <h3>12</h3>
+            <p>Medical departments</p>
+          </div>
+
+          <div class="card">
+            <span class="card-label">Surgeries Today</span>
+            <h3>09</h3>
+            <p>Scheduled operations</p>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Search Doctors</h3>
+          </div>
+
+          <div class="search-area">
+            <input type="text" placeholder="Search by doctor name or ID..." class="search-box">
+            <select class="filter-box">
+              <option>All Departments</option>
+              <option>Cardiology</option>
+              <option>Neurology</option>
+              <option>Orthopedics</option>
+              <option>Dermatology</option>
+            </select>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="panel-box table-box">
+          <div class="box-header">
+            <h3>Doctor Records</h3>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Doctor ID</th>
+                  <th>Name</th>
+                  <th>Specialization</th>
+                  <th>Department</th>
+                  <th>Experience</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>D101</td>
+                  <td>Dr. Sharma</td>
+                  <td>Heart Specialist</td>
+                  <td>Cardiology</td>
+                  <td>10 Years</td>
+                  <td><span class="badge confirmed">Available</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>D102</td>
+                  <td>Dr. Mehta</td>
+                  <td>Bone Specialist</td>
+                  <td>Orthopedics</td>
+                  <td>08 Years</td>
+                  <td><span class="badge pending">On Leave</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>D103</td>
+                  <td>Dr. Khan</td>
+                  <td>Brain Specialist</td>
+                  <td>Neurology</td>
+                  <td>12 Years</td>
+                  <td><span class="badge confirmed">Available</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>D104</td>
+                  <td>Dr. Arora</td>
+                  <td>Skin Specialist</td>
+                  <td>Dermatology</td>
+                  <td>07 Years</td>
+                  <td><span class="badge cancelled">Busy</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+                <tr>
+                  <td>D105</td>
+                  <td>Dr. Reddy</td>
+                  <td>Child Specialist</td>
+                  <td>Pediatrics</td>
+                  <td>09 Years</td>
+                  <td><span class="badge confirmed">Available</span></td>
+                  <td><button class="table-btn">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

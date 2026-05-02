@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Settings - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin-style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+                <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li class="active"><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Settings</h3>
+          <p>Manage hospital admin profile and system preferences</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <div class="section-title">
+          <h2>System Settings</h2>
+          <button class="main-btn">Save Changes</button>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Admin Profile</h3>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label>Full Name</label>
+              <input type="text" class="form-control" value="Admin User">
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" class="form-control" value="admin@medilab.com">
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="text" class="form-control" value="+91 9876543210">
+            </div>
+            <div>
+              <label>Role</label>
+              <input type="text" class="form-control" value="Hospital Administrator">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Hospital Preferences</h3>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label>Hospital Name</label>
+              <input type="text" class="form-control" value="MediLab Hospital">
+            </div>
+            <div>
+              <label>Timezone</label>
+              <select class="form-control">
+                <option selected>Asia/Kolkata</option>
+                <option>UTC</option>
+                <option>Asia/Dubai</option>
+              </select>
+            </div>
+            <div>
+              <label>Language</label>
+              <select class="form-control">
+                <option selected>English</option>
+                <option>Hindi</option>
+              </select>
+            </div>
+            <div>
+              <label>Notification Mode</label>
+              <select class="form-control">
+                <option selected>Email Alerts</option>
+                <option>SMS Alerts</option>
+                <option>All Alerts</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-box">
+          <div class="box-header">
+            <h3>Security Settings</h3>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label>Current Password</label>
+              <input type="password" class="form-control" placeholder="Enter current password">
+            </div>
+            <div>
+              <label>New Password</label>
+              <input type="password" class="form-control" placeholder="Enter new password">
+            </div>
+            <div>
+              <label>Confirm Password</label>
+              <input type="password" class="form-control" placeholder="Confirm new password">
+            </div>
+            <div>
+              <label>Two-Factor Auth</label>
+              <select class="form-control">
+                <option selected>Enabled</option>
+                <option>Disabled</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

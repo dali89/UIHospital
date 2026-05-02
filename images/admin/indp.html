@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLab - Patient Management</title>
+  <!-- <link rel="stylesheet" href="stdp.css"> -->
+     <link rel="stylesheet" href="common1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+      </div>
+      <ul class="menu">
+        <li><a href="ind2.html">Dashboard</a></li>
+       <li><a href="s.html">Staff</a></li>
+           <li><a href="med.html">Medicine</a></li>
+        <li><a href="l.html">Lab</a></li>
+        <li><a href="w.html">Ward</a></li>
+        <li><a href="t.html">Treatment</a></li>
+        <li><a href="ind1.html">Pharmacy</a></li>
+        <li class="active"><a href="#">Patient</a></li>
+          <li><a href="invoice.html">Invoice</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Area -->
+    <main class="main-content">
+      <!-- Topbar -->
+      <header class="topbar">
+        <span class="username">Madhusha</span>
+        <h2>MediLab Hospital</h2>
+        <span class="username">Prasad</span>
+      </header>
+
+      <!-- Patient Management Form -->
+      <section class="patient-management">
+        <h3>Patient Management</h3>
+
+        <div class="top-controls">
+          <button class="report-btn">Generate Report</button>
+          <div class="search-box">
+            <input type="text" placeholder="Patient ID">
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <form class="patient-form">
+          <div class="form-row">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+          </div>
+
+          <div class="form-row">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Mobile Number">
+          </div>
+
+          <div class="form-row">
+            <input type="text" placeholder="NIC">
+            <input type="date" placeholder="Date of Birth">
+          </div>
+
+          <div class="form-row">
+            <textarea placeholder="Address"></textarea>
+          </div>
+
+          <div class="form-row">
+            <select>
+              <option>Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+          </div>
+
+          <div class="form-buttons">
+            <button type="button" class="add-btn">Add</button>
+            <button type="button" class="update-btn">Update</button>
+            <button type="button" class="delete-btn">Delete</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Recent Patients Table -->
+      <section class="recent-patients">
+        <h3>Recent Patients</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Patient ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>NIC</th>
+              <th>Email</th>
+              <th>Mobile Number</th>
+              <th>Date of Birth</th>
+              <th>Gender</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>Sam</td><td>Sapooth</td><td>61262256V</td>
+              <td>sam@mail.com</td><td>0774596005</td><td>2022-01-13</td>
+              <td>Male</td><td>Galle</td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td><td>John</td><td>Sapooth</td><td>61262256V</td>
+              <td>john@mail.com</td><td>0774596005</td><td>2022-01-13</td>
+              <td>Male</td><td>Kandy</td>
+              <td>
+                <button class="edit">✏️</button>
+                <button class="trash">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

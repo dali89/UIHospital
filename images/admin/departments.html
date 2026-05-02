@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>Admin Panel</p>
+      </div>
+
+      <ul class="menu">
+          <li  ><a href="dashboardadmin.html">Dashboard</a></li>
+        <li ><a href="patient.html">Patients</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="doctor.html">Doctors</a></li>
+          <li class="active"><a href="departments.html">Departments</a></li>
+        <li><a href="dashboardphar.html">Pharmacy</a></li>
+          <li   ><a href="appointments.html">Appointments</a></li>
+       
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="ward.html">Ward</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="invoice1.html">Invoice</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Department Management</h3>
+          <p>Manage hospital departments and assigned staff</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/40" alt="Admin Avatar" class="avatar">
+        </div>
+      </header> -->
+
+          <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Patient Management</h3>
+          <p>Manage all patient records, admissions and medical details</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Admin</span>
+          <img src="https://via.placeholder.com/45" alt="Admin Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="dashboard">
+        <h2>Departments</h2>
+
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Departments</h3>
+            <p>12</p>
+          </div>
+          <div class="card">
+            <h3>Total Doctors</h3>
+            <p>48</p>
+          </div>
+          <div class="card">
+            <h3>Active Units</h3>
+            <p>10</p>
+          </div>
+          <div class="card">
+            <h3>Support Staff</h3>
+            <p>35</p>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <div class="action-buttons">
+            <a href="#" class="action-btn">Add Department</a>
+            <a href="#" class="action-btn">Assign Doctor</a>
+            <a href="#" class="action-btn">Manage Staff</a>
+            <a href="#" class="action-btn">Department Report</a>
+          </div>
+        </div>
+
+        <div class="reports-box">
+          <h3>Department Details</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Dept. ID</th>
+                <th>Department</th>
+                <th>Head Doctor</th>
+                <th>Doctors</th>
+                <th>Rooms</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>D101</td>
+                <td>Cardiology</td>
+                <td>Dr. Sharma</td>
+                <td>08</td>
+                <td>12</td>
+                <td><span class="confirmed">Active</span></td>
+              </tr>
+              <tr>
+                <td>D102</td>
+                <td>Neurology</td>
+                <td>Dr. Khan</td>
+                <td>06</td>
+                <td>08</td>
+                <td><span class="confirmed">Active</span></td>
+              </tr>
+              <tr>
+                <td>D103</td>
+                <td>Orthopedics</td>
+                <td>Dr. Mehta</td>
+                <td>07</td>
+                <td>10</td>
+                <td><span class="pending">Limited</span></td>
+              </tr>
+              <tr>
+                <td>D104</td>
+                <td>Dermatology</td>
+                <td>Dr. Arora</td>
+                <td>05</td>
+                <td>06</td>
+                <td><span class="confirmed">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
