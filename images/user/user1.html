@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+        <li class="active"><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Hello, Dali 👋</h3>
+          <p>Welcome back to your hospital dashboard</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <!-- Dashboard -->
+      <section class="dashboard">
+        <h2>User Dashboard</h2>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+          <div class="card">
+            <h3>Total Appointments</h3>
+            <p>08</p>
+          </div>
+          <div class="card">
+            <h3>Medical Reports</h3>
+            <p>14</p>
+          </div>
+          <div class="card">
+            <h3>Pending Bills</h3>
+            <p>03</p>
+          </div>
+          <div class="card">
+            <h3>Prescriptions</h3>
+            <p>06</p>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <div class="action-buttons">
+            <a href="addappoint.html" class="action-btn">Book Appointment</a>
+            <a href="records.html" class="action-btn">View Reports</a>
+            <a href="bills.html" class="action-btn">Pay Bills</a>
+            <a href="messages.html" class="action-btn">Message Doctor</a>
+          </div>
+        </div>
+
+        <!-- Appointments + Profile -->
+        <div class="dashboard-grid">
+          <div class="appointments-box">
+            <h3>Upcoming Appointments</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Doctor</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A201</td>
+                  <td>Dr. Sharma</td>
+                  <td>2026-03-22</td>
+                  <td>10:00 AM</td>
+                  <td><span class="confirmed">Confirmed</span></td>
+                </tr>
+                <tr>
+                  <td>A202</td>
+                  <td>Dr. Mehta</td>
+                  <td>2026-03-25</td>
+                  <td>02:30 PM</td>
+                  <td><span class="pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>A203</td>
+                  <td>Dr. Arora</td>
+                  <td>2026-03-28</td>
+                  <td>11:15 AM</td>
+                  <td><span class="cancelled">Cancelled</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="profile-box">
+            <h3>User Information</h3>
+            <div class="info-item">
+              <span>Name:</span>
+              <strong>Dali Vaishnav</strong>
+            </div>
+            <div class="info-item">
+              <span>Patient ID:</span>
+              <strong>P1021</strong>
+            </div>
+            <div class="info-item">
+              <span>Age:</span>
+              <strong>21</strong>
+            </div>
+            <div class="info-item">
+              <span>Blood Group:</span>
+              <strong>B+</strong>
+            </div>
+            <div class="info-item">
+              <span>Email:</span>
+              <strong>dali@example.com</strong>
+            </div>
+            <div class="info-item">
+              <span>Phone:</span>
+              <strong>+91 9876543210</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Reports -->
+        <div class="reports-box">
+          <h3>Recent Medical Reports</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Report ID</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Doctor</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>R501</td>
+                <td>Blood Test</td>
+                <td>2026-03-10</td>
+                <td>Dr. Sharma</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>R502</td>
+                <td>X-Ray</td>
+                <td>2026-03-12</td>
+                <td>Dr. Mehta</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>R503</td>
+                <td>ECG</td>
+                <td>2026-03-15</td>
+                <td>Dr. Arora</td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

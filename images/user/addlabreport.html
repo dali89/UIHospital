@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Dashboard - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addpatient.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+             <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li ><a href="appointments.html">Appointments</a></li>
+        <li  class="active"><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Add Lab Report</h3>
+        <p>Upload patient report</p>
+      </div>
+      <span class="username">Dr. Madhusha</span>
+    </div>
+
+    <!-- Form -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Report Form</h3>
+      </div>
+
+      <form class="report-form">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter patient name">
+          </div>
+
+          <div class="form-group">
+            <label>Test Type</label>
+            <input type="text" placeholder="e.g. Blood Test">
+          </div>
+
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date">
+          </div>
+
+          <div class="form-group">
+            <label>Status</label>
+            <select>
+              <option>Pending</option>
+              <option>Completed</option>
+              <option>Critical</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-group full">
+          <label>Upload Report (PDF / Image)</label>
+          <input type="file" id="fileInput">
+        </div>
+
+        <!-- Preview -->
+        <div class="preview-box" id="previewBox">
+          <p>No file selected</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="main-btn">Upload Report</button>
+             <button type="reset" class="cancel-btn" onclick="window.location.href='records.html'">Cancel</button> 
+        </div>
+
+      </form>
+    </div>
+
+  </main>
+</div>
+
+<!-- JS for Preview -->
+<script>
+const fileInput = document.getElementById("fileInput");
+const previewBox = document.getElementById("previewBox");
+
+fileInput.addEventListener("change", function() {
+  const file = this.files[0];
+
+  if (!file) return;
+
+  const fileType = file.type;
+
+  if (fileType.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      previewBox.innerHTML = `<img src="${e.target.result}" style="max-width:200px; border-radius:10px;">`;
+    };
+    reader.readAsDataURL(file);
+  } else {
+    previewBox.innerHTML = `<p>📄 ${file.name}</p>`;
+  }
+});
+</script>
+
+</body>
+</html>

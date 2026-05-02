@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+           <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li  class="active"><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+     
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h3>Hello, Dali 👋</h3>
+          <p>Check your appointments and booking status</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/45" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="page-header">
+          <h2>Appointments</h2>
+         <button type="reset" class="main-btn" onclick="window.location.href='addappoint.html'">+ Book Appointment</button> 
+        </div>
+
+        <div class="stats-cards">
+          <div class="small-card">
+            <h4>Total</h4>
+            <p>08</p>
+          </div>
+          <div class="small-card">
+            <h4>Confirmed</h4>
+            <p>04</p>
+          </div>
+          <div class="small-card">
+            <h4>Pending</h4>
+            <p>02</p>
+          </div>
+          <div class="small-card">
+            <h4>Cancelled</h4>
+            <p>02</p>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <h3>Upcoming & Recent Appointments</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Doctor</th>
+                <th>Department</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A201</td>
+                <td>Dr. Sharma</td>
+                <td>Cardiology</td>
+                <td>2026-03-22</td>
+                <td>10:00 AM</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>A202</td>
+                <td>Dr. Mehta</td>
+                <td>Neurology</td>
+                <td>2026-03-25</td>
+                <td>02:30 PM</td>
+                <td><span class="pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>A203</td>
+                <td>Dr. Arora</td>
+                <td>Orthopedic</td>
+                <td>2026-03-28</td>
+                <td>11:15 AM</td>
+                <td><span class="cancelled">Cancelled</span></td>
+              </tr>
+              <tr>
+                <td>A204</td>
+                <td>Dr. Khan</td>
+                <td>Dermatology</td>
+                <td>2026-04-01</td>
+                <td>09:45 AM</td>
+                <td><span class="confirmed">Confirmed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

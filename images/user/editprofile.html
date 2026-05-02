@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+        <li><a href="user1.html">Dashboard</a></li>
+        <li class="active"><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div>
+          <h3>Edit Profile ✏️</h3>
+          <p>Update your personal details</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/45" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content">
+
+        <form class="edit-form">
+
+          <h2>Personal Information</h2>
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" value="Dali Vaishnav">
+          </div>
+
+          <div class="form-group">
+            <label>Age</label>
+            <input type="number" value="21">
+          </div>
+
+          <div class="form-group">
+            <label>Gender</label>
+            <select>
+              <option selected>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Blood Group</label>
+            <select>
+              <option>B+</option>
+              <option>O+</option>
+              <option>A+</option>
+              <option>AB+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" value="dali@example.com">
+          </div>
+
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" value="+91 9876543210">
+          </div>
+
+          <div class="form-group">
+            <label>Address</label>
+            <textarea rows="3">Lucknow, India</textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-save">Save Changes</button>
+            <button type="button" class="cancel-btn" onclick="window.location.href='profile.html'">Cancel</button>
+          </div>
+
+        </form>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>

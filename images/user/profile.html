@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+      <li><a href="user1.html">Dashboard</a></li>
+         <li  class="active"><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+
+
+
+     
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h3>Hello, Dali 👋</h3>
+          <p>Manage your profile details here</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/45" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content">
+        <h2>My Profile</h2>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <div class="profile-image-box">
+              <img src="https://via.placeholder.com/120" alt="Profile Photo">
+              <h3>Dali Vaishnav</h3>
+              <p>Patient ID: P1021</p>
+            </div>
+          </div>
+
+          <div class="details-card">
+            <h3>Personal Information</h3>
+            <div class="info-row"><span>Full Name</span><strong>Dali Vaishnav</strong></div>
+            <div class="info-row"><span>Age</span><strong>21 Years</strong></div>
+            <div class="info-row"><span>Gender</span><strong>Female</strong></div>
+            <div class="info-row"><span>Blood Group</span><strong>B+</strong></div>
+            <div class="info-row"><span>Email</span><strong>dali@example.com</strong></div>
+            <div class="info-row"><span>Phone</span><strong>+91 9876543210</strong></div>
+            <div class="info-row"><span>Address</span><strong>Lucknow, India</strong></div>
+            <button class="main-btn" onclick="window.location.href='editprofile.html'">Edit Profile</button>
+          </div>
+        </div>
+
+        <div class="extra-card">
+          <h3>Emergency Contact</h3>
+          <div class="info-row"><span>Name</span><strong>Riya Vaishnav</strong></div>
+          <div class="info-row"><span>Relation</span><strong>Sister</strong></div>
+          <div class="info-row"><span>Phone</span><strong>+91 9876501234</strong></div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

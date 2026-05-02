@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bills - MediLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+   <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+         <li  class="active"><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+          <li ><a href="logout.html">Logout</a></li>
+
+
+
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h3>Hello, Dali 👋</h3>
+          <p>Check and pay your medical bills</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/45" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="page-header">
+          <h2>Billing Details</h2>
+        <button type="reset" class="main-btn" onclick="window.location.href='billsview.html'">Pay Now</button> 
+        </div>
+
+        <div class="stats-cards">
+          <div class="small-card">
+            <h4>Total Bills</h4>
+            <p>08</p>
+          </div>
+          <div class="small-card">
+            <h4>Paid</h4>
+            <p>05</p>
+          </div>
+          <div class="small-card">
+            <h4>Pending</h4>
+            <p>02</p>
+          </div>
+          <div class="small-card">
+            <h4>Overdue</h4>
+            <p>01</p>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <h3>Recent Bills</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Bill ID</th>
+                <th>Department</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Receipt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>B201</td>
+                <td>Cardiology</td>
+                <td>2026-03-08</td>
+                <td>₹2,500</td>
+                <td><span class="done">Paid</span></td>
+                <td><a href="#">View</a></td>
+              </tr>
+              <tr>
+                <td>B202</td>
+                <td>Lab Test</td>
+                <td>2026-03-12</td>
+                <td>₹1,200</td>
+                <td><span class="processing">Pending</span></td>
+                <td><a href="#">Pay</a></td>
+              </tr>
+              <tr>
+                <td>B203</td>
+                <td>Radiology</td>
+                <td>2026-03-15</td>
+                <td>₹3,000</td>
+                <td><span class="cancelled">Overdue</span></td>
+                <td><a href="#">Pay</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

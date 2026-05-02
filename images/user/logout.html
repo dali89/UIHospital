@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+   <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+          <li  class="active"><a href="logout.html">Logout</a></li>
+
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Logout</h3>
+          <p>Securely sign out from your account</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/42" alt="User" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content logout-page">
+        <div class="logout-card">
+          <div class="logout-icon"><img src="log-removebg-preview.png"></div>
+
+          
+  
+
+          <h2>Are you sure you want to logout?</h2>
+          <p>
+            You are about to sign out of your MediLab user panel.
+            Make sure all your work is saved before continuing.
+          </p>
+
+          <div class="logout-actions">
+            <!-- <a href="user-dashboard.html" class="cancel-btn">Cancel</a>
+            <a href="login.html" class="logout-btn">Yes, Logout</a> -->
+
+               <button type="submit" class="main-btn" onclick="window.location.href='../special.html'">Yes, Logout</button>
+           <button class="main-btn" onclick="history.back()">Cancel</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

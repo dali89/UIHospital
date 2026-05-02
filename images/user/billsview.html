@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .bill-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      /* max-width: 100%; */
+      width:700px;
+      height:600px;
+      margin: 40px auto;
+      font-family: 'Poppins', sans-serif;
+    }
+
+.bill-container:hover {
+    border: 2px solid #13c5dd;
+    box-shadow: 0 0 15px rgba(19, 197, 221, 0.5);
+    transition: 0.3s ease;
+}
+
+    .bill-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .bill-header h2 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .bill-section {
+      margin: 20px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .bill-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .pay-btn {
+      display: block;
+      width: 100%;
+      background:  #13c5dd;
+ 
+      color: #fff;
+      padding: 14px 0;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .paid-text {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      color: green;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+    
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+        <li class="active"><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+  <div class="bill-container">
+    <div class="bill-header">
+      <h2>🏥 MediLab Hospital</h2>
+      <p>Billing Receipt</p>
+    </div>
+
+    <!-- BILL DETAILS -->
+    <div class="bill-section">
+      <div class="bill-row"><strong>Bill No:</strong> <span>#B1023</span></div>
+      <div class="bill-row"><strong>Patient Name:</strong> <span>Dali Vaishnav</span></div>
+      <div class="bill-row"><strong>Date:</strong> <span>2026-03-25</span></div>
+    </div>
+
+    <div class="bill-section">
+      <div class="bill-row"><strong>Consultation Charges</strong> <span>₹500</span></div>
+      <div class="bill-row"><strong>Lab Test (Blood)</strong> <span>₹750</span></div>
+      <div class="bill-row"><strong>Medicine</strong> <span>₹350</span></div>
+    </div>
+
+    <div class="bill-section">
+      <div class="bill-row"><strong>Total Amount</strong> <strong>₹1600</strong></div>
+    </div>
+
+    <!-- PAY NOW BUTTON -->
+    <button class="pay-btn" id="payNowBtn" onclick="makePayment()">
+      Pay Now
+    </button>
+
+    <!-- After Payment Text -->
+    <p class="paid-text" id="paidText">✔ Payment Successful</p>
+  </div>
+  </div>
+
+<script>
+  function makePayment() {
+    // Button hide
+    document.getElementById("payNowBtn").style.display = "none";
+
+    // Show Paid text
+    document.getElementById("paidText").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

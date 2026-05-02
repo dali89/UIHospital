@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+     <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+          <li  class="active"><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+
+
+        
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h3>Hello, Dali 👋</h3>
+          <p>View and manage your medical reports</p>
+        </div>
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/45" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="page-header">
+          <h2>Medical Records</h2>
+          <!-- <a href="#" class="main-btn">Upload Report</a> -->
+            <button type="reset" class="main-btn" onclick="window.location.href='addlabreport.html'">Upload Report</button> 
+        </div>
+
+        <div class="stats-cards">
+          <div class="small-card">
+            <h4>Total Reports</h4>
+            <p>14</p>
+          </div>
+          <div class="small-card">
+            <h4>Blood Tests</h4>
+            <p>05</p>
+          </div>
+          <div class="small-card">
+            <h4>X-Rays</h4>
+            <p>03</p>
+          </div>
+          <div class="small-card">
+            <h4>Scans</h4>
+            <p>06</p>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <h3>Recent Medical Reports</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Report ID</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Doctor</th>
+                <th>Status</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>R501</td>
+                <td>Blood Test</td>
+                <td>2026-03-10</td>
+                <td>Dr. Sharma</td>
+                <td><span class="ready">Ready</span></td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>R502</td>
+                <td>X-Ray</td>
+                <td>2026-03-12</td>
+                <td>Dr. Mehta</td>
+                <td><span class="ready">Ready</span></td>
+                <td><a href="#">Download</a></td>
+              </tr>
+              <tr>
+                <td>R503</td>
+                <td>ECG</td>
+                <td>2026-03-15</td>
+                <td>Dr. Arora</td>
+                <td><span class="processing">Processing</span></td>
+                <td><a href="#">Pending</a></td>
+              </tr>
+              <tr>
+                <td>R504</td>
+                <td>MRI Scan</td>
+                <td>2026-03-17</td>
+                <td>Dr. Khan</td>
+                <td><span class="ready">Ready</span></td>
+                <td><a href="#">Download</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

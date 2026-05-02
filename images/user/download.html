@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+
+ 
+</head>
+
+<body>
+
+  <div class="container">
+
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>🏥 MediLab</h2>
+        <p>User Panel</p>
+      </div>
+
+      <ul class="menu">
+        <li ><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li class="active"><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+      </ul>
+    </aside>
+
+
+
+
+
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="welcome-box">
+          <h3>Hello, Dali 👋</h3>
+          <p>Welcome back to your hospital dashboard</p>
+        </div>
+
+        <div class="user-profile">
+          <span class="username">Dali Vaishnav</span>
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+        </div>
+      </header>
+
+      <!-- Download All Button -->
+      <button class="download-all-btn" onclick="downloadAll()">
+        ⬇ Download All
+      </button>
+
+      <p id="download-status" class="download-status"></p>
+
+      <!-- Prescription Table -->
+      <div class="prescription-box">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Doctor</th>
+              <th>Date</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>P101</td>
+              <td>Dr. Sharma</td>
+              <td>2026-03-15</td>
+              <td><button class="download-btn" onclick="downloadFile('prescription1.pdf')">Download</button></td>
+            </tr>
+
+            <tr>
+              <td>P102</td>
+              <td>Dr. Mehta</td>
+              <td>2026-03-17</td>
+              <td><button class="download-btn" onclick="downloadFile('prescription2.pdf')">Download</button></td>
+            </tr>
+
+            <tr>
+              <td>P103</td>
+              <td>Dr. Arora</td>
+              <td>2026-03-20</td>
+              <td><button class="download-btn" onclick="downloadFile('prescription3.pdf')">Download</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function downloadAll() {
+      const status = document.getElementById("download-status");
+      const btn = document.querySelector(".download-all-btn");
+
+      // Disable button
+      btn.disabled = true;
+      btn.style.opacity = "0.5";
+      btn.style.cursor = "not-allowed";
+
+      // First message
+      status.innerHTML = "⏳ Preparing download…";
+
+      setTimeout(() => {
+        status.innerHTML = "📥 Downloading…";
+
+        // Download all files
+        downloadFile("prescription1.pdf");
+        downloadFile("prescription2.pdf");
+        downloadFile("prescription3.pdf");
+
+        // Completed
+        setTimeout(() => {
+          status.innerHTML = "✔ All files downloaded successfully!";
+        }, 1500);
+
+      }, 2000);
+    }
+
+    function downloadFile(file) {
+      const link = document.createElement("a");
+      link.href = file;
+      link.download = file;
+      link.click();
+    }
+  </script>
+
+</body>
+</html>

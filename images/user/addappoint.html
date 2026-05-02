@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Patients - MediLab Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addpatient.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏥 MediLab</h2>
+      <p>Doctor Panel</p>
+    </div>
+
+    <ul class="menu">
+            <li><a href="user1.html">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li  class="active"><a href="appointments.html">Appointments</a></li>
+        <li><a href="records.html">Medical Reports</a></li>
+        <li><a href="prescript.html">Prescriptions</a></li>
+        <li><a href="bills.html">Bills</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="welcome-box">
+        <h3>Add Appointment</h3>
+        <p>Schedule a new patient visit</p>
+      </div>
+
+      <div class="user-profile">
+        <span class="username"> Madhusha</span>
+        <img src="https://via.placeholder.com/45" class="avatar">
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="panel-box">
+      <div class="box-header">
+        <h3>Appointment Form</h3>
+      </div>
+
+      <form class="appointment-form">
+
+        <div class="form-grid">
+
+          <!-- Patient Name -->
+          <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter patient name" required>
+          </div>
+
+          <!-- Doctor -->
+          <div class="form-group">
+            <label>Doctor</label>
+            <input type="text" value="Dr. Madhusha" readonly>
+          </div>
+
+          <!-- Date -->
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required>
+          </div>
+
+          <!-- Time -->
+          <div class="form-group">
+            <label>Time</label>
+            <input type="time" required>
+          </div>
+
+          <!-- Problem -->
+          <div class="form-group">
+            <label>Problem</label>
+            <input type="text" placeholder="e.g. Fever, Chest Pain">
+          </div>
+
+          <!-- Status -->
+          <div class="form-group">
+            <label>Status</label>
+            <select>
+              <option>Pending</option>
+              <option>Completed</option>
+              <option>Cancelled</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Notes -->
+        <div class="form-group full">
+          <label>Notes</label>
+          <textarea placeholder="Additional notes..."></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="main-btn">Save Appointment</button>
+            <button type="reset" class="cancel-btn" onclick="window.location.href='appointments.html'">Cancel</button> 
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
